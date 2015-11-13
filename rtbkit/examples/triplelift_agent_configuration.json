@@ -1,0 +1,93 @@
+{
+    "account":
+    [
+        "triplelift_agent",
+        "inner"
+    ],
+    "augmentations":
+    {
+        "triplelift-augmentor-ex": 
+        {
+            "required": true,
+            "config": { "maxPerDay": 10 },
+            "filters": { "include": [], "exclude": ["drop-triplelift-augmentor-ex"] }
+        }
+    },
+    "bidControl":
+    {
+        "fixedBidCpmInMicros":0,
+        "type":"RELAY"
+    },
+    "creatives":
+    [
+        {
+            "format":"0x0",
+            "id":0,
+            "name":"NativeObject",
+            "providerConfig":
+            {
+                "triplelift":
+                {
+                    "adid":"NativeObject",
+                    "adomain":
+                    [
+                        "www.minicabster.co.uk"
+                    ],
+                    "nurl":"http://nurl.geode.agency/winnotice?winprice=${AUCTION_PRICE}&impid=%{imp.id}&bidRequestId=%{bidrequest.id}&camp=C1011&asset=AN1eUL5DJY&type=none&test=true"
+                }
+            }
+        }
+    ],
+    "errorFormat":"lightweight",
+    "external":false,
+    "externalId":1,
+    "lossFormat":"lightweight",
+    "maxInFlight":20000,
+    "minTimeAvailableMs":5.0,
+    "nativePreFilter":1,
+    "providerConfig":
+    {
+        "triplelift": {
+           "iurl": "",
+           "native": {
+             "assets": [
+               {
+                 "title": {
+                   "text": "Need a Taxi"
+                 }
+               },
+               {
+                  "data":
+                  {
+                      "type":1,
+                      "value":"Sponsored by Sauron"
+                  }
+               },
+               {
+                 "data": {
+                   "type": 2,
+                   "value": "Best Prices Here"
+                 }
+               },
+               {
+                 "img": {
+                   "w": 650,
+                   "h": 485,
+                   "type": 3,
+                   "url": "http://d6rm2lyo01nyh.cloudfront.net/A3000.png"
+                 }
+               }
+             ],
+             "ver": 0
+           },
+           "link": {
+             "url": "www.minicabster.co.uk",
+             "clicktrackers": [
+               "http://imptrack.geode.agency/bids/click?UBID=%{bidrequest.id}&UCID=C1011"
+             ]
+           }
+      }
+    },
+    "test":false,
+    "winFormat":"full"
+}

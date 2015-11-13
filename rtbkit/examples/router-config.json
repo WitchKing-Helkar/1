@@ -1,0 +1,19 @@
+/* -*- js-mode -*- */
+[
+    {
+        "exchangeType": "bidswitch",
+        "listenPort": 18142,
+        "bindHost": "0.0.0.0",
+        "auctionVerb": "POST",
+        "auctionResource": "/auctions",
+        "performNameLookup": false
+    },
+    {
+        "exchangeType": "triplelift",
+        "listenPort": 12439,
+        "bindHost": "0.0.0.0",
+        "auctionVerb": "POST",
+        "auctionResource": "/auctions",
+        "performNameLookup": false
+    }
+]
